@@ -1,0 +1,61 @@
+%\documentclass[12pt,oneside]{jarticle} % 一般的なドキュメントクラス
+\documentclass[12pt,oneside]{ise-thesis} % 片面印刷の場合
+%\documentclass[12pt,twoside]{ise-thesis} % 両面印刷の場合
+
+
+\newcommand{\figref}[1]{図~\ref{#1}}
+\newcommand{\tabref}[1]{表~\ref{#1}}
+\newcommand{\equref}[1]{式~(\ref{#1})}
+%\setlength\textfloatsep{100pt}
+\setlength\intextsep{8pt} % 本文中の図の余白
+\setlength\abovecaptionskip{5pt} % 図とキャプションの間の余白
+\usepackage{comment}
+\usepackage{here}
+\usepackage{multirow}
+\usepackage{mediabb}
+
+
+% 行間調整
+\renewcommand{\baselinestretch}{1.15}
+\sectionstretch{1.0}		% セクション見出し前後の行間
+\liststretch{1.0}		% 箇条書き環境の行間
+
+
+
+\begin{document}
+
+\begin{flushleft}
+  MM工学研究Ia 中間報告資料
+\end{flushleft}
+\begin{center}
+\vspace*{12pt}
+{\Large ここに研究テーマのタイトルを記入}
+\vspace{12pt} \\
+\begin{tabular}{c}
+氏名 (学籍番号: ○○○○○○)
+\end{tabular} \vspace{3pt} \\
+\today \vspace{12pt} \\
+\end{center}
+
+
+%第1章：研究背景
+\input{chap1}
+
+%第2章：研究領域の概要
+\input{chap2}
+
+%第3章：関連研究 (中間進捗)
+\input{chap3}
+
+%第4章：今後の研究予定
+\input{chap4}
+
+参考文献は卒論の時と同じ\cite{yan2018spatial}
+
+% 参考文献
+% 日本語BibTeX (pbibtex/jbibtex) を使う場合
+\bibliographystyle{ieice}
+%\bibliography{./ref} % default
+\bibliography{ref} % change "./ref"(default) to "ref"
+
+\end{document}
