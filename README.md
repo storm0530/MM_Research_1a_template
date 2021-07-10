@@ -1,0 +1,2 @@
+# MM_Research_1a_template
+MM工学研究Ⅰa(春夏)での中間報告資料のテンプレートリポジトリ
